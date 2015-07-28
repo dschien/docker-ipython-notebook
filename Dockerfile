@@ -18,7 +18,7 @@ RUN apt-get install -y -q python-numpy python-scipy python-matplotlib python-pan
 
 VOLUME /notebooks
 
-RUN pip install --upgrade -f /notebooks/bbc2015/requirements.txt
+RUN pip install --upgrade -f /notebooks/requirements.txt
 
 WORKDIR /notebooks
 
