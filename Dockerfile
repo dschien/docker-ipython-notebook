@@ -18,7 +18,10 @@ RUN apt-get install -y -q python-numpy python-scipy python-matplotlib python-pan
 
 VOLUME /notebooks
 
+RUN git clone git@github.com:Bakedweb/softwarecriollo.git /home/softwarecriollo.com
+
 RUN pip install --upgrade -r /notebooks/requirements.txt
+RUN pip install byteplay
 
 WORKDIR /notebooks
 
